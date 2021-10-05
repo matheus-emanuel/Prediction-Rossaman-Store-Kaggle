@@ -1,0 +1,86 @@
+AULA 04 - Método de gerenciamento CRISP-DS
+    -> É um método muito ultilizado na industria para gerenciar processos e pelas suas caracteristicas ele foi 
+    adaptado para data science
+    -> É um método ciclico de desenvolvimento
+    -> Mapeamento de todos os possíveis problemas já no primeiro ciclico
+    -> 1 versão ende-to-end da solucao
+
+    -> Passos do CRISP-DS
+        -> Questao de negócio
+            É o que as pessoas vão me pedir pra resolver, no caso desse projeto é a previsão das vendas nas 
+            proximas 6 semanas
+
+            *A ciencia de dados hoje ainda é muto nova, e no caso as pessoas não sabem muito bem o que querem então
+            você(eu) ser proativo vai te colocar na frente em relação a concorrência
+
+        ->  Entendimento do negócio
+            Geralmente as requisiçõe que vão vir pra mim, não é o problema, mas sim o que a pessoa acha que aquela
+            é a solução para o problema dela, entenda a causa raiz
+
+        -> Coleta de dados
+            Aqui vou trabalhar muito com sql, requisição em banco de dados as vezes banco de dados diferentes 
+            em API's,
+
+        -> Limpeza dos dados
+            Sempre trabalhar com dados limpos, sem o ç ou o ~, sem caracteres especiais, sempre ver se os tipos de
+            dados, realmente são aquilo que eles deveriam ser, por exemplo, se um número é realmente um número, se
+            data é realmente data.
+
+            -> Análise descritiva
+            -> Tratamento de dados faltantes
+            -> Estatistica descritiva
+        
+        -> Exploração dos dados
+            Entender quais variáveis mais impactam no fenômeno que eu tô modelando, ou seja aquilo que mais impacta
+            pra eu resolver a minha questão de negócio, achar as correlações e a força delas
+
+        -> Modelagem dos dados
+            Preparar os dados para os algoritmos de machine learning, por exemplo separar os dados em training and 
+            testing, transformar as variáveis categoricas em variáveis numéricas, fazer transformação de dados
+
+        -> Algoritmos de ML 
+            Aplicar os algoritmos de machine learning sobre os dados que estão modelados
+
+        -> Avaliar esse algoritmos
+            Criar um conjunto de erros que façam sentido pro meu problema, para que eu possa ter uma visão da
+            acurácia dos modelos calcular o MAI, MAP, MRSI, a própria acurácia.
+
+            CASO SUA ACURACIA NÃO SEJA ACEITA, OU SEJA ATINJA O MINIMO NECESSÁRIO PARA COLOCAR O MODELO EM PRODUCAO
+            VOCÊ TERÁ QUE VOLTAR PARA O ENTENDIMENTO DO NEGOCIO.
+        
+        -> Modelo em produção
+
+
+MÓDULO 01 - Limpeza dos dados
+    -> Por que fazer isso?
+        Essa análise é boa para entender qual o tamanho do problema, ou em outras palavras, onde eu tô me  metendo
+        -> Quantidade de dados
+        -> Tipos de variáveis
+        -> Quantidade de dados NA (Não aplicável)
+        -> Resumo geral dos dados
+
+
+MÓDULO 2 - Exploração dos dados
+    -> Featuring Engineering
+        -> Criar um mapa mental de hipóteses
+            - Fenômeno - Aquilo que eu estou querendo analisar
+            - Agentes - Todas as entidades que de alguma forma impactam o meu fenômeno
+            - Atributos do agente - As caracteristicas que descrevem os meus agentes
+        -> Lista de hipóteses
+            - hipóteses são basicamente APOSTAS
+MÓDULO 4 - EDA - Análise Exploratória de dados
+    Objetivos da EDA
+        - Ganhar conhecimento de negócio
+        - Validar as hipóteses de negócio (insghts)
+            - Gerar suspresa
+            - Chocar uma crença de uma pessoa
+        - Perceber variáveis são importantes para o modelo
+    Os 3 tipos de análise
+        - Análise Univariada (Me importo somente com essa variável)
+            - Como é essa variável? (min, max, range, distribuição)
+        
+        - Análise Bivariada
+            - Como a variável impacta na variável resposta (correlação, validação de hipóteses)
+        
+        - Análise Multivariada
+            - Como as variáveis se relacionam?
